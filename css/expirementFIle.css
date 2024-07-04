@@ -1,0 +1,36 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+  }
+  
+  .rating div {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+
+  .rating .filled {
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 1px;
+  }
+  
+  .rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
