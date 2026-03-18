@@ -1,3 +1,7 @@
+/*======= Public Key Initialization =======*/
+emailjs.init("nyuQLIrjfEZc5CCZ7");
+
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
